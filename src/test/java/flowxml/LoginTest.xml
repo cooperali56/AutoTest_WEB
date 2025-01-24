@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LoginTest">
+
+    <listeners>
+        <listener class-name="gmmtest.testng.listener.TestngListener"/>
+        <listener class-name="gmmtest.testng.listener.TestngReports"/>
+<!--        <listener class-name="gmmtest.testng.listener.ExtentReporterListener"/>-->
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <test preserve-order="true" name="登录模块流程验证">
+
+        <parameter name="browser" value="firefox"/>
+
+        <classes>
+            <class name="testclass.LoginFlow">
+                <methods>
+                    <include name="openBrowser"/>
+                    <include name="noteLoginTest"/>
+<!--                    <include name="accountLoginTest"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

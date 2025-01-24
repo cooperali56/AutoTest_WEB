@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="登录模块流程验证"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="26.820">
+  <properties />
+  
+  
+            <testcase name="noteLoginTest" time="25.031" classname="testclass.LoginFlow" />
+                <testcase name="openBrowser" time="1.789" classname="testclass.LoginFlow" />
+      
+</testsuite>

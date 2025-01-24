@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="gmmtest.testng.listener.TestngListener"/>
+        <listener class-name="gmmtest.testng.listener.TestngReports"/>
+        <!--        <listener class-name="gmmtest.testng.listener.ExtentReporterListener"/>-->
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="D:/AutoTest/gmm-uiauto-pc">
+
+        <parameter name="browser" value="firefox"/>
+        <parameter name="account" value="1750167xxxx"/>
+        <parameter name="code" value="2019xx"/>
+        <parameter name="expect" value=""/>
+
+        <classes>
+            <class name="testclass.GmmMainFlow">
+                <methods>
+                    <include name="initialize"/>
+                    <include name="user_login"/>
+<!--                    <include name="sell_flow"/>-->
+                    <include name="buy_flow"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+</suite>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PC官网出售流程UI automated testing">
+
+    <listeners>
+        <listener class-name="gmmtest.testng.listener.TestngListener"/>
+        <listener class-name="gmmtest.testng.listener.TestngReports"/>
+        <!--        <listener class-name="gmmtest.testng.listener.ExtentReporterListener"/>-->
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <test preserve-order="true" name="SELLTest">
+
+        <parameter name="browser" value="firefox"/>
+
+        <classes>
+            <class name="testclass.SellFlow">
+                <methods>
+                    <include name="initialize"/>
+                    <include name="login_flow"/>
+                    <include name="sell_flow"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

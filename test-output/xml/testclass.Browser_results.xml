@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="D:\AutoTest\gmmpc"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.069">
+  <properties />
+  
+  
+            <testcase name="browserSelect" time="3.069" classname="testclass.Browser" />
+      
+</testsuite>
