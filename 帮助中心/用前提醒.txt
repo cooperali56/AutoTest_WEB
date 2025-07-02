@@ -1,4 +1,0 @@
-本套UI自动化采用POM理念设计的UiAutoMatedTesting,基本详情请看同文件夹xmind文档。
-所需环境：java、maven、testNG。
-具体操作，全核心流程run“testng.xml”,其他模块运行flowxml文件夹下文件。
-注意：请留意excel里面的case变动,获取excel的单元格是固定的。
